@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+      -master
+  jobs:
+    build-and-test:
+      runs-on: windows-latest
+      steps:
+        -name: Install dependency
+        run: |
+         mvn clean install
+        
+          
+        

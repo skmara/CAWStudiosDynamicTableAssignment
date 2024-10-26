@@ -4,7 +4,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/java/Features",
         tags = "@Mahesh",
-        glue = {"Steps"}
+        glue = {"Steps","Pages"}
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 
